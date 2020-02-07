@@ -9,7 +9,7 @@
     <style>
 
       body { 
-        background-color: #4A547F;
+        background-color: darkolivegreen;
         font-family: Garamond, Georgia, serif;
 
         }
@@ -20,21 +20,30 @@
           margin-right: auto;
           border: 5px solid #333333;
           padding: 15px;
+
           }
 
           h1 {
             font-size: 40px;
             text-align: center;
             margin: 0;
+            font-style: italic;
              }
         
           h2{
           text-align: center;
           background-color: 
+          font-style: italic;
+          font-style: underline;
            }
 
+           #sunny{ 
+              font-style: italic;
+              text-decoration: underline;
+            }
+
           ul{
-            background-color: #939CBF;
+            background-color: cadetblue;
             text-align: center;
             padding: 10px;
             }
@@ -57,10 +66,36 @@
             font-style: italic;
             font-family: Helvetiva, Arial, serif;
             line-height: 20px;
+            padding: 10px;
+            border-left: 2px solid black;
             color: #999999;
             }
-
           
+          img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border: 5px solid black;
+
+            }
+
+            }
+    .butterfly .caption {
+      position: absolute;
+      width: 283px;
+      height: 50px;
+      bottom: 0px;
+      left: 0px;
+      color: #ffffff;
+      background: green;
+      text-align:center;
+      font-weight:bold;
+      opacity:0.7;
+    }
+
+      
+
 
     </style>
   </head>
@@ -68,7 +103,7 @@
     <div id="container">
       <header>
         <h1>Sophie Timmermann</h1>
-        <h2>My first web page</h2>
+        <h2 id="sunny"> My summer trip to Italy </h2>
       </header>
       <nav>
         <ul>
@@ -80,17 +115,18 @@
       </nav>
       <article>
         <h2>Photos from my last vacation</h2>
-        <img src="https://media.journalism.berkeley.edu/upload/2020/02/1580836066772cb8d.jpg" alt="Flower">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img id="butterfly" src="https://media.journalism.berkeley.edu/upload/2020/02/1581031782fcc03da.jpg" alt="Flower">
+        <div class="caption"><br>A sunny day in Rome, Italy.</div>
+        <p>Impressions from Rome, Italy on a sunny day. A Sunday stroll ended in an unexpected discussion with two local Italians about the upcoming elections. Two espressi later, the verdict was clear: Europe must stay united. </p>
+        <p class="quote">Living in Europe is great. It offers so many opportunities. One day I'm in Spain,the next morning I'm all the way up in Poland. I don't usually consider myself a cosmopolitan, but I do feel European.</p>
+        
       </article>
       <article>
-        <h2>Photos from my last vacation</h2>
-        <img id="flower" src="https://media.journalism.berkeley.edu/upload/2020/02/1580836066772cb8d.jpg" alt="Flower">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Trevi fountain</h2>
+        <img id="flower" src="https://media.journalism.berkeley.edu/upload/2020/02/1581031437225a867.jpg" alt="Flower">
+        <p>The fountain was built at the end of an aqueduct (Aqua Virgo) that was constructed in 19BC. The Aqua Virgo was built by Augustus's son-in-law Agrippa to supply water for the Roman Baths. The water for the fountain comes from the Salone Springs about 14 miles outside of Rome..</p>
+        <p class="quote">Rumour has it that a thief called Giovanni di Lorenzo comes every night to collect the coins in the fountain. A smart man if you ask me.</p>
+      
       </article>
     </div>
   </body>
